@@ -1,0 +1,15 @@
+version: "3"
+
+services: 
+  api_cobranca_mongodb:
+    build: .
+    command: npm run start:dev
+    ports: 
+      - "3005:3005"
+    volumes: 
+      - .:/opt/docker_files/api_cobranca_mongodb
+      - /opt/docker_files/api_cobranca_mongodb/node_modules
+networks:
+  default:
+    external: true
+    name: mongodb_node_network       

@@ -1,0 +1,201 @@
+
+8906580f-76bb-4e85-a0fd-ce1906202069
+{
+  "payments": [
+    "id": "teste1234",
+    "amount": 250.15,
+    "paymentChannel": "paymentChannel",
+    "paidOutDate": "2021-11-08T13:25:17.571Z",
+    "statusCancelamento": false,
+    "statusPagamento": true,
+    "dataCancelamento": "2021-11-08T13:25:17.571Z",
+    "dataPagamento": "2021-11-08T13:25:17.571Z"
+  ]
+}
+
+
+{
+    "authenticationCode": "8906580f-76bb-4e85-a0fd-ce1906202069",
+    "updatedAt": "2021-09-24T13:34:04.591+00:00",
+    "ourNumber": "07644459129",
+    "digitable": "33290001151076444591129001771210787590000050016",
+    "status": "Registered",
+    "account": { 
+        "number": "177121"
+      },
+      "document": "680764445912981",
+      "amount": {
+        "currency": "BRL",
+        "value": 500.16
+      },
+      "dueDate": "2021-09-30T03:00:00+00:00",
+      "emissionDate": "2021-09-24T13:34:04.662+00:00",
+      "type": "Levy",
+      "payer": {
+        "document": "32854900634",
+        "name": "CARLOS AUGUSTO LUCARELI              ",
+        "tradeName": "CARLOS AUGUSTO LUCARELI              ",
+        "address": {
+          "addressLine": "RUA ARLINDO NICOLATO S/N                ",
+          "city": "SANTANA DO CAMP",
+          "state": "MG",
+          "zipCode": "36783000"
+        }
+      },
+      "recipientFinal": {
+        "document": "37355840207",
+        "name": "Renan Petronilho Sant Anna",
+        "tradeName": "",
+        "address": {
+          "addressLine": "Rua Voluntario Joao dos Santos",
+          "city": "Indaiatuba",
+          "state": "SP",
+          "zipCode": "13330230"
+        }
+      },
+      "recipientOrigin": {
+        "document": "37355840207",
+        "name": "Renan Petronilho Sant Anna",
+        "tradeName": "",
+        "address": {
+          "addressLine": "Rua Voluntario Joao dos Santos",
+          "city": "Indaiatuba",
+          "state": "SP",
+          "zipCode": "13330230"
+        }
+      },
+      "payments": []
+    }
+
+{
+  getAllDetalheBoleto {
+    
+    authenticationCode
+    updatedAt
+    ourNumber
+    digitable
+    status
+    account {
+      number
+      branch
+    }
+    document
+    amount {
+      currency
+      value
+    }
+    dueDate
+    emissionDate
+    type
+    payer {
+      document
+      name
+      tradeName
+      address {
+        addressLine
+        city
+        state
+        zipCode
+      }
+    }
+    recipientFinal {
+      document
+      name
+      tradeName
+      address {
+        addressLine
+        city
+        state
+        zipCode
+      }
+    }
+    recipientOrigin {
+      document
+      name
+      tradeName
+      address {
+        addressLine
+        city
+        state
+        zipCode
+      }
+    }
+    payments {
+      id
+      amount
+      paymentChannel
+      paidOutDate
+    }
+  }
+}
+
+#########################################################################################################
+
+mutation {
+  createDetalheBoleto (
+    data: {
+      authenticationCode: "8906580f-76bb-4e85-a0fd-ce1906202069"
+      updatedAt: "2021-09-24T13:34:04.591+00:00"
+      ourNumber: "07644459129"
+      digitable: "33290001151076444591129001771210787590000050016"
+      status: "Registered"
+      
+  ) {
+    authenticationCode
+    updatedAt
+    ourNumber
+    digitable
+    status
+    account {
+      number
+      branch
+    }
+    document
+    amount {
+      currency
+      value
+    }
+    dueDate
+    emissionDate
+    type
+    payer {
+      document
+      name
+      tradeName
+      address {
+        addressLine
+        city
+        state
+        zipCode
+      }
+    }
+    recipientFinal {
+      document
+      name
+      tradeName
+      address {
+        addressLine
+        city
+        state
+        zipCode
+      }
+    }
+    recipientOrigin {
+      document
+      name
+      tradeName
+      address {
+        addressLine
+        city
+        state
+        zipCode
+      }
+    }
+    payments {
+      id
+      amount
+      paymentChannel
+      paidOutDate
+    }
+  }
+}
